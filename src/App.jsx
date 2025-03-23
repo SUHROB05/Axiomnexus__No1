@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <>
+    <div className='contayner'>
       <Router>
         <Layout>
           <Routes>
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </Layout>
       </Router>
-    </>
+    </div>
   )
 }
 
