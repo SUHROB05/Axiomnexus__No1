@@ -1,0 +1,103 @@
+.section5 {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .section5-text {
+        display: flex;
+        justify-content: space-between;
+        width: 882px;
+        height: 422px;
+        gap: 48px;
+
+        .section5-contayner {
+            width: 770px;
+            height: 422px;
+            gap: 60px;
+
+            p {
+                font-family: Space Grotesk;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 56px;
+                letter-spacing: -4%;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            .section5-item {
+                display: flex;
+                width: 770px;
+                height: 82px;
+                margin-top: 60px;
+                gap: 24px;
+
+                .section5-item-img {
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 50%;
+
+                    img {
+                        width: 76px;
+                        height: 76px;
+                        border-radius: 50%;
+
+                    }
+                }
+
+                .section5-item-text {
+                    color: #fff;
+
+                    h3 {
+                        font-family: Space Grotesk;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 46px;
+                        letter-spacing: -3%;
+                        text-transform: uppercase;
+
+                    }
+
+                    p {
+                        font-family: Inria Sans;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 32px;
+                        letter-spacing: -2%;
+
+                    }
+                }
+
+                .section5-item-btn {
+                    width: 148px;
+                    height: 64px;
+                    gap: 20px;
+                    display: flex;
+                    margin-left: auto;
+
+                    .item-btn1 {
+                        width: 64px;
+                        height: 64px;
+
+                        img {
+                            width: 64px;
+                            height: 64px;
+                            transform: rotate(120deg);
+                        }
+                    }
+
+                    .item-btn2 {
+                        width: 64px;
+                        height: 64px;
+
+                        img {
+                            width: 64px;
+                            height: 64px;
+                            transform: rotate(-50deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

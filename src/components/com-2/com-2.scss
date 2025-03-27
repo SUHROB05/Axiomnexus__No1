@@ -1,0 +1,57 @@
+.section__2 {
+    width: 100%;
+    padding: 80px 0;
+
+    .section__2-text {
+        h3 {
+            font-family: Space Grotesk;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 46px;
+            letter-spacing: -3%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    .section__2-blok {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .section__2-card {
+            margin-top: 48px;
+            width: 306px;
+            height: 152px;
+            gap: 10px;
+            border: 1px solid #2B2B2B;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+
+
+            h3 {
+                font-family: Space Grotesk;
+                font-weight: 700;
+                font-size: 44px;
+                line-height: 64px;
+                letter-spacing: -4%;
+                text-align: center;
+                text-transform: uppercase;
+
+            }
+
+            p {
+                font-family: Inria Sans;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: -2%;
+                text-align: center;
+
+            }
+        }
+    }
+}

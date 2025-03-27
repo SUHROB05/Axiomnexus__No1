@@ -7,7 +7,40 @@ import Alogo from "../../assets/icons/Branding.svg"
 import Arrow from "../../assets/icons/Arrow.svg"
 
 
-function Header({ title, bgImage }) {
+import { DownOutlined } from '@ant-design/icons';
+import { Dropdown, Space } from 'antd';
+const items = [
+    {
+        label: (
+            <Link to="/project">Project </Link>
+        ),
+        key: '0',
+    },
+    {
+        label: (
+            <Link to="/">HOME</Link>
+        ),
+        key: '1',
+    },
+    {
+        label: (
+            <Link to="/">HOME</Link>
+        ),
+        key: '3',
+
+    },
+];
+
+function Header({ title, title2, bgImage }) {
+
+    // (function bolimnitekshirish(title2) {
+    //     const bolim = document.getElementById("bolim");
+    //     if (title2 == "") {
+    //         bolim.style.display = "none"
+    //     }
+    // })();
+
+
     return (
 
         <header style={{ backgroundImage: `url(${bgImage})` }} id='header'>
@@ -28,7 +61,17 @@ function Header({ title, bgImage }) {
                             <Link to="/services">SERVICES</Link>
                         </li>
                         <li>
-                            <Link to="/">HOME</Link>
+                            <Link to="/blog">BLOG</Link>
+                        </li>
+                        <li>
+                            <Dropdown menu={{ items }}>
+                                <a onClick={e => e.preventDefault()}>
+                                    <Space>
+                                        ALL PAGES
+                                        <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
                         </li>
                     </ul>
                 </nav>
@@ -39,6 +82,7 @@ function Header({ title, bgImage }) {
             </div>
             <div className="sarlavha">
                 <div className="sarlavha-text">
+                    {title2 && <h4 id='bolim'> HOME <span></span> {title2}</h4>}
                     <h1>{title}</h1>
                 </div>
                 <AylanuvchiStiker />

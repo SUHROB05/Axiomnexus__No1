@@ -5,6 +5,9 @@ import './App.css'
 import Layout from './Layout/index.jsx';
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Services from "./pages/Services"
+import Blog from './pages/Blog'
+import Project from './pages/Project'
 
 
 
@@ -14,14 +17,16 @@ function App() {
   return (
     <div className='contayner'>
       <Router>
-        <Layout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            {/* <Route path='/' element={<Home />} /> */}
-            {/* <Route path='/' element={<Home />} /> */}
-          </Routes>
-        </Layout>
+
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Services />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="project" element={<Project />} />
+          </Route>         
+        </Routes>
       </Router>
     </div>
   )

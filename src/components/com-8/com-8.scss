@@ -1,0 +1,89 @@
+.section8 {
+    padding: 120px 0;
+
+    .section8-text {
+        h3 {
+            font-family: Space Grotesk;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 64px;
+            letter-spacing: -4%;
+            text-transform: uppercase;
+            color: #fff;
+            width: 670px;
+            height: 128px;
+            gap: 32px;
+
+        }
+    }
+
+    .section8-contayner {
+        display: flex;
+        justify-content: space-between;
+
+        .section8-item {
+            width: 620px;
+            height: 536px;
+            gap: 32px;
+
+            h3 {
+                font-family: Space Grotesk;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -3%;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            form {
+                display: grid;
+                gap: 20px;
+                margin-bottom: 32px;
+
+                label {
+                    width: 620px;
+                    height: 56px;
+                    gap: 10px;
+                    padding-top: 12px;
+                    padding-right: 24px;
+                    padding-bottom: 12px;
+                    padding-left: 24px;
+                    border-bottom-width: 2px;
+                    background-color: #2B2B2B;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        font-family: Inria Sans;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 32px;
+                        letter-spacing: -2%;
+                        color: #fff;
+                    }
+                }
+
+                textarea {
+                    min-height: 172px;
+                    gap: 10px;
+                    padding-top: 12px;
+                    padding-right: 24px;
+                    padding-bottom: 12px;
+                    padding-left: 24px;
+                    // border-bottom-width: 2px;
+                    background-color: #2B2B2B;
+                    color: #8F8C8C;
+                    outline: none;
+                    font-family: Inria Sans;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -2%
+                }
+
+            }
+        }
+    }
+}

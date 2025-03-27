@@ -1,7 +1,17 @@
-.contayner{
+.contayner {
     max-width: 1440px;
     width: 1440px;
     margin: 0 auto;
     border: 1px solid #fff;
     min-height: 1500px;
+}
+
+.span-yashil {
+    width: 5px;
+    height: 5px;
+    background-color: #A0E74B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
